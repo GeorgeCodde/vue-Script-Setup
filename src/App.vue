@@ -1,25 +1,18 @@
 <script setup lang="ts">
-import { ref } from "vue";
-const counter = ref(0);
-
-// export default defineComponent({
-//   setup() {
-//     const counter = ref(0);
-//     const increase = () => {
-//       counter.value++;
-//     };
-//     return {
-//       counter,
-//       increase,
-//     };
-//   },
-// });
+import { RouterView } from "vue-router";
+import NavBar from "./shared/components/NavBar.vue";
+import { routerLink } from "./router/link-routes";
 </script>
 
 <template>
   <div class="wrapper">
-    <h1>Counter: {{ counter }}</h1>
-    <button @click="counter++">+1</button>
+    <header>
+      <NavBar title="Marvell" :links="routerLink" />
+    </header>
+
+    <main>
+      <RouterView />
+    </main>
   </div>
 </template>
 

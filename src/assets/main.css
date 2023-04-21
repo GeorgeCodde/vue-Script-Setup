@@ -2,7 +2,7 @@
 
 #app {
   /* max-width: 1280px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 2rem;
 
   font-weight: normal;
@@ -32,4 +32,12 @@ a,
     /* grid-template-columns: 1fr 1fr; */
     padding: 0 2rem;
   }
+}
+
+.router-link-active  {
+ color: rgb(100, 87, 181) !important;
+}
+
+.router-link-exact-active {
+color: rgb(135, 85, 134) !important;
 }
